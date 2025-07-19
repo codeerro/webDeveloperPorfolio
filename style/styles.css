@@ -109,8 +109,6 @@ main{
 .about{
     border-radius: 10px;
     padding: 130px 150px;
-    
-
 }
 .about-items{
     display: flex;
@@ -170,3 +168,39 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 
 }
 
+@media screen and (max-width: 577px) {
+    .skills-container,footer, .about-items, .banner, nav > ul{
+        flex-direction: column;
+    }
+    .header img{
+        width: 100%;
+    }
+    nav > ul{
+        gap: 10px;
+        margin: none;
+        
+    }
+    .header{
+        background-image: none;
+    }
+    .banner{
+        margin: 20px;
+    }
+    footer{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+    .section-description{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+    
+}
