@@ -168,8 +168,12 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 
 }
 
-@media screen and (max-width: 577px) {
-    .skills-container,footer, .about-items, .banner, nav > ul{
+@media screen and (max-width: 576px) {
+    .skills-container,
+    footer, 
+    .about-items, 
+    .banner, nav > ul,
+     nav{
         flex-direction: column;
     }
     .header img{
@@ -177,8 +181,10 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     }
     nav > ul{
         gap: 10px;
-        margin: none;
-        
+        margin: none;  
+    }
+    nav{
+     margin: 20px;
     }
     .header{
         background-image: none;
@@ -198,9 +204,37 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     .section-description{
         display: block;
     }
+    .about-items{
+        text-align: center;
+    }
+    .skills-container{
+        text-align: center;
+    }
     
 }
 
-@media screen and (min-width:577px) and (max-width: 768px) {
-    
+@media screen and (min-width:577px) and (max-width: 990px) {
+    .banner, nav > ul,
+     nav, 
+     .about-items, .skills-container{
+        flex-direction: column;
+    }
+    .header{
+        background-image: none;
+        
+    }
+    .secondry-color{
+        width: fit-content;
+    }
+    .about{
+        width: fit-content;
+        margin: 20px;
+    }
+    .about-items{
+        text-align: center;
+    }
+    .skills-container{
+        text-align: center;
+    }
+
 }
